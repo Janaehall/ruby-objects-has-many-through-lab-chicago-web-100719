@@ -13,6 +13,6 @@ class Doctor
   end
 
   def appointments
-    Appointment.all.collect{|a| a.doctor == self}
+    Appointment.all.select{|a| a.doctor == self}
   end
 end
