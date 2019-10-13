@@ -21,6 +21,6 @@ class Doctor
   end
 
   def patients
-    self.appointments.map{|a| a.doctor}
+    self.appointments.map{|a| a.date}
   end
 end
