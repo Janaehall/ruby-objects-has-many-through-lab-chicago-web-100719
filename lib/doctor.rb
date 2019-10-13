@@ -11,4 +11,8 @@ class Doctor
   def self.all
     @@all
   end
+
+  def appointments
+    Appointment.all.collect{|a| a.doctor == self}
+  end
 end
